@@ -1,0 +1,36 @@
+body{
+    background-color: #ffe8ff;
+    color:black
+}
+
+h1{
+    font-size:large;
+    font-family: "Courier New";
+    margin:auto;
+}
+
+h2{
+    font-size:medium;
+    font-family:'Times New Roman', Times, serif;
+    color:#0213a0;
+}
+
+h3{
+    font-size:small;
+    font-family: "Arial";
+    color:#9b1726;
+}
+
+p{
+    line-height:1.5;
+}
+
+img{
+    border: 5px solid #8826d3; /* Choose your border color */
+    padding: 10px;
+    margin: 20px;
+    border-top-right-radius: 30px;
+}
+
+
+
