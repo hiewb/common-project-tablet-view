@@ -72,6 +72,8 @@ nav > a{
 
 #skip{
     text-transform: uppercase;
+    position: absolute;
+    left:-500px;
 }
 
 .thumbnail{
