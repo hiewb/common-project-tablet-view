@@ -106,10 +106,6 @@ body > a{
 .pet-image {
     grid-area: image;
 }
-.pet-image img {
-    width: 250px;
-    height: 300px;
-}
 
 .pet-info {
     grid-area: info;
@@ -152,6 +148,7 @@ figure {
 
 /*Animating pet image!*/
 .pet-image img {
+    height: auto;
     max-width: 100%;
     animation: bounce 2s infinite; 
 }
