@@ -1,3 +1,43 @@
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content li {
+    display: block;
+    text-align:right;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+nav a {
+    font-weight: bold;
+    color: #0066cc;
+    font-family:'Trebuchet MS';
+}
+
 title{
     text-align:center;
     font-size: 50px;
@@ -57,8 +97,7 @@ li {
 }
 
 nav{
-    margin-left: 20px;
-    margin-right: 400px;
+    width: 95%;
     border: 2px solid black;
 }
 
@@ -81,7 +120,7 @@ body > a{
 
 .hide {
     position: absolute;
-    top: -50px;
+    top: -70px;
 }
 
 .hide a{
@@ -288,5 +327,54 @@ figure {
         -webkit-transition: top 1s ease-out;
         transition: top 1s ease-out;
         z-index: 1;
+    }
+}
+
+/* Tablet View */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    /* Tablet Styles Go Here */
+    body {
+        font-size: 18px; /* larger font */
+    }
+
+    h2 {
+        font-size: 30px; /* larger heading font */
+        margin-left: 30px;
+    }
+
+    p {
+        margin-left: 30px; /* larger margins */
+    }
+
+    img {
+        margin: 30px; 
+        max-width: 80%; 
+    }
+
+    ul {
+        margin-left: 30px; 
+    }
+
+    li {
+        font-size: 24px; 
+    }
+
+    nav {
+        margin-left: 30px;
+    }
+
+    nav ul {
+        padding: 0;
+    }
+
+    nav li {
+        margin-top: 10px;
+        display: inline-block;
+        margin-left: 20px;
+    }
+    
+    a {
+        font-size: 24px; /* large font size for tablet links */
+        padding: 10px;
     }
 }
